@@ -51,6 +51,7 @@ function addBookToLibrary(event) {
   console.log(myLibrary)
   updateLibraryInStorage();
   displayBooks()
+  form.reset()
 }
 
 function getLibraryFromStorage(){
