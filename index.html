@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href ="styles.css">
+
+
+</head>
+<body id="body">
+    <div id="overlay"></div>
+    <p class="header">Library Inventory Page</p>
+    <p>This is a mini-project under <a href="www.theodinproject.com">The Odin Project</a>. The key features used are Object Consructors, LocalStorage, and FormData parsing.</p>
+    <p> </p>
+    <u class="sortButton">Sort by Titles (A-Z)</u>
+    <div id="mainContainer"></div>
+    <button class="open-button" onclick="openForm()">Add Book</button>
+
+
+    <!-- The form -->
+    <div class="form-popup" id="myForm">
+    <form class="form-container">
+      <h1>Add a book</h1>
+  
+      <label for="title"><b>Title</b></label>
+      <input type="text" placeholder="Enter Title" name="title" required>
+  
+      <label for="author"><b>Author</b></label>
+      <input type="text" placeholder="Enter Author" name="author" required>
+
+      <label for="numPages"><b>Number of Pages</b></label>
+      <input type="text" placeholder="Enter Num of Pages" name="numPages" required>
+  
+      <button type="submit" class="btn">Add</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+    <script src="library.js"></script>
+
+</body>
+</html>
